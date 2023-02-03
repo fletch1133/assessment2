@@ -1,0 +1,6 @@
+console.log(`You're ready to begin!`)
+
+
+// The first company that I completed research on is Meta. Meta is a social media platofrm application as well as an advertising company for other entities. the Meta application involves many software languages to run their framework including JavaScript, HTML, CSS, PHP as well as ReactJS.
+// The second company that I completed research on is Amazon. Amazon is a company with its core business structure being e-commerce, cloud computing, streaming, artificial intelligence as well as being an advertising platform. Amazon runs thier applications in the languages of Java, Pearl, Angular JS, MySQL, Amazon EC2 container service, DynamoDB as well as multiple other of Amazon frameworks.
+// The third company that i chose to complete research on is Cisco. Cisco is a company that specilizes in Information Technology as well as networking brand that specializies in switches, routers and cybersecurity. Cisco has many different frameworks including but not limited to, HTML5, jQuery and Google Analytics.
