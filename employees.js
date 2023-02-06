@@ -22,14 +22,15 @@
 //CODE HERE
 class Employee {
     constructor (name, shifts) {
-        this.name = name
+        this.name = name;
         this.shifts = shifts
     }
-}
 
-getSchedule(employee) 
-    getSchedule = newSchedule
-    console.log(`${this.name} works on ${this.shift}`)
+
+getSchedule(){
+    return `${this.name} works on ${this.shift}`
+}
+}
 
 
 
@@ -45,12 +46,7 @@ getSchedule(employee)
 */
 
 //CODE HERE
-class Employee extends empOne
-    constructor(name, shifts) {
-        super(name, shifts)
-        this.name = jess
-        this.shifts = weekday mornings, weekend afternoons
-    }
+let empOne = new Employee("Jess", ["Weekday mornings", "Weekday Afternoons"])
 
 
 /*
@@ -59,7 +55,7 @@ class Employee extends empOne
 */
 
 //CODE HERE
-
+console.log(empOne.getSchedule())
 
 
 /*
@@ -75,7 +71,8 @@ class Employee extends empOne
 */
 
 //CODE HERE
-
+let empTwo = {...empOne, name: "Nick"}
+console.log(empTwo)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -102,7 +99,18 @@ class Employee extends empOne
 */
 
 //CODE HERE
-
+class Manager extends Employee {
+    constructor(name,shifts,employees){
+        super(name,shifts)
+        this.employees = employees
+    }
+    getEmployees(){
+        return `${this.name} manages ${this.employees}`
+    }
+    addEmployee(emp){
+        this.employees.push(emp)
+    }
+}
 
 
 /*
@@ -117,7 +125,7 @@ class Employee extends empOne
 */
 
 //CODE HERE
-
+let manager = new Manager("winston",["Weekday mornings", "Weekday afternoons"], ["Cece", "schmidt"])
 
 /*
     Call the `getEmployees` method on the
@@ -125,7 +133,7 @@ class Employee extends empOne
 */
 
 //CODE HERE
-
+console.log(manager.getEmployees())
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -133,7 +141,7 @@ class Employee extends empOne
 */
 
 //CODE HERE 
-
+manager.addEmployees("coach")
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -141,3 +149,4 @@ class Employee extends empOne
 */
 
 //CODE HERE
+console.log(manager.getEmployees)

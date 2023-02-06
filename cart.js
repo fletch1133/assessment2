@@ -35,7 +35,10 @@ const cart = [
 
 //CODE HERE
 
-const summedPrice = cart.reduce()
+const summedPrice = cart.reduce((acc,curr) => {
+    return acc + curr.price
+}, 0)
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,9 +57,12 @@ const summedPrice = cart.reduce()
 */
 
 //CODE HERE
-const calcFinalPrice = function(callBack){
-    console.log(callBack)
+const calcFinalPrice = (cartTotal,couponValue,tax) => {
+    let taxAdded = cartTotal + (cartTotal * tax)
+    let finalPrice = taxAdded - couponValue
+    return finalPrice
 }
+console.log(clacFinalPrice(summedPrice, 10, .06))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -81,7 +87,10 @@ const calcFinalPrice = function(callBack){
 
 /*
     TEXT ANSWER HERE
-
+// name, a string, the property to follow the names of customers
+// email, a string, put customers on the mailing list and it has to be a string to be stored properly
+// age, number, kepp records of the details of customers orders and it needs to be a number
+// favortie items, array, keep track of cutomers top choices
 */
 
 /*
